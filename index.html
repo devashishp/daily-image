@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <meta charset="utf-8">
+    <title>Hathway</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.3.css">
+    <link rel="stylesheet" href="css/themes/FFOS.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/get-image.js" defer></script>
+    <script type="text/javascript" src="js/nasa.js" defer></script>
+
+  </head>
+  <body>
+    <div data-role="page" data-theme="c" id="page1">
+      <div data-role="header" class="firasize">
+        <h1>Daily Image</h1>
+        <a href="#page2" data-transition="slide" class="ui-btn ui-alt-icon ui-btn-b ui-btn-right ui-icon-gear ui-btn-icon-right ui-content">...</a>
+        <!-- <a href="#page3" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-eye ui-alt-icon ui-corner-all ui-btn-b ui-btn-left ui-btn-icon-left ui-content">&nbsp&nbsp&nbsp</a> -->
+      </div>
+      <div data-role="main" class="ui-content" id="image1">
+        <div data-role="tabs" id="swip">
+          <div data-role="navbar" >
+            <ul>
+              <li><a class="firasize ui-btn-active" href="#fragmentBing">Bing</a></li>
+              <li><a class="firasize" href="#fragmentNasa">NASA</a></li>
+            </ul>
+          </div>
+
+          <div id="fragmentBing">
+            <div data-role="tabs">
+              <div data-role="navbar">
+                <ul>
+                  <li><a class="firasize ui-btn-active ui-btn-icon-top ui-content ui-alt-icon ui-icon-camera" href="#fragmentBing1"></a></li>
+                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-l" href="#fragmentBing2"></a></li>
+                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-r" href="#fragmentBing3"></a></li>
+                </ul>
+              </div>
+              <br>
+              <div id="fragmentBing1">
+                <br>
+                <div class="copy" id="Copyright"></div>
+                <br>
+                <div data-role="footer" class="rekt" id="share-image">
+                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
+                </div>
+              </div>
+              <div id="fragmentBing2">
+                <br>
+                <div class="copy" id="Copyright2"></div>
+                <br>
+                <div data-role="footer" class="rekt" id="share-image1">
+                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
+                </div>
+              </div>
+              <div id="fragmentBing3">
+                <br>
+                <div class="copy" id="Copyright3"></div>
+                <br>
+                <div data-role="footer" class="rekt" id="share-image2">
+                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div id="fragmentNasa">
+            <div data-role="tabs">
+              <div data-role="navbar">
+                <ul>
+                  <li><a class="firasize ui-btn-active ui-btn-icon-top ui-content ui-alt-icon ui-icon-camera" href="#fragmentNasa1"></a></li>
+                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-l" href="#fragmentNasa2"></a></li>
+                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-r" href="#fragmentNasa3"></a></li>
+                </ul>
+              </div>
+              <br>
+              <div id="fragmentNasa1">
+                <br>
+                <div class="copy" id="NASACopyright1"></div>
+                <br>
+                <div data-role="footer" class="rekt" id="share-Nasa1">
+                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
+                </div>
+              </div>
+              <div id="fragmentNasa2">
+                <br>
+                <div class="copy" id="NASACopyright2"></div>
+                <br>
+                <div data-role="footer" class="rekt" id="share-Nasa2">
+                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
+                </div>
+              </div>
+              <div id="fragmentNasa3">
+                <br>
+                <div class="copy" id="NASACopyright3"></div>
+                <br>
+                <div data-role="footer" class="rekt" id="share-Nasa3">
+                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
+                </div>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-role="page" data-theme="c" id="page2">
+      <div data-role="header">
+        <h1>Settings</h1>
+        <a href="#page1" data-transition="slide" data-direction="reverse" class="ui-btn ui-alt-icon ui-btn-icon-left ui-corner-all ui-icon-back">Back</a>
+      </div>
+      <div data-role="main" class="ui-content" id="Sett">
+        <p align="center">About</p>
+        <p class="about">Made by : <br><br> Devashish Purandare
+          <br>Pune, India.
+          <br><br>Feedback :
+          <br>Twitter : @TruHD
+          <br><a href="mailto:devashish@outlook.com?subject=Daily Image Feedback&body= My Feedback:">Mail</a>
+          <br><br>Please Rate the App if you like it!</p>
+        </div>
+      </div>
+      <div data-role="page" data-theme="a" id="page3">
+        <div data-role="header">
+          <h1>Select Theme</h1>
+          <a href="#page1" data-transition="slide" class="ui-btn ui-btn-right ui-alt-icon ui-btn-icon-right ui-corner-all ui-icon-carat-r">Back</a>
+        </div>
+        <div data-role="main" class="ui-content">
+        <p class="firasize"><h6>Coming Soon!</h6></p>
+      </div>
+      </div>
+    </body>
+  </HTML>

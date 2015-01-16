@@ -1,0 +1,42 @@
+* { font-family: 'FiraSans'; }
+
+@font-face {
+font-family: 'FiraSans';
+src: url('../fonts/FiraSans-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+.copy {
+  width: 100%;
+  font-family: 'FiraSans';
+
+  border-radius: 2px;
+  color:#AFAFAF;
+  font-size: 12px;
+
+}
+
+.rekt{
+  font-size: 15px;
+  height: 45px;
+
+}
+
+.firasize{
+  font-family: 'FiraSans';
+
+}
+
+.about:h2 {
+  font-size: 15px;
+  color: #5F9B0A;
+}
+.about {
+  font-size: 12px;
+  color: #5F9B0A;
+}
+.about:br {
+  font-size: 12px;
+  color:#AFAFAF;
+}
