@@ -16,15 +16,12 @@
       },
 
   "permissions": {
-        "desktop-notification": {
-          "description": "Notifies when new image available"
-    },
     "systemXHR": {
         "description": "To fetch the image from the web"
     },
-    "alarms": {
-        "description": "Required to add wallpaper"
-    }
+    "network-http": {},
+    "network-tcp": {}
+
   },
   "type": "privileged",
   "messages": [

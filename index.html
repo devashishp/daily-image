@@ -13,10 +13,11 @@
     <script src="js/jquery.mobile-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/get-image.js" defer></script>
     <script type="text/javascript" src="js/nasa.js" defer></script>
+    <script src="galleria/galleria-1.4.2.min.js"></script>
 
   </head>
   <body>
-    <div data-role="page" data-theme="c" id="page1">
+    <div data-role="page" data-theme="a" id="page1">
       <div data-role="header" class="firasize">
         <h1>Daily Image</h1>
         <a href="#page2" data-transition="slide" class="ui-btn ui-alt-icon ui-btn-b ui-btn-right ui-icon-gear ui-btn-icon-right ui-content">...</a>
@@ -27,84 +28,18 @@
           <div data-role="navbar" >
             <ul>
               <li><a class="firasize ui-btn-active" href="#fragmentBing">Bing</a></li>
-              <li><a class="firasize" href="#fragmentNasa">NASA</a></li>
+              <li><a class="firasize " href="#fragmentNasa">NASA</a></li>
             </ul>
           </div>
 
           <div id="fragmentBing">
-            <div data-role="tabs">
-              <div data-role="navbar">
-                <ul>
-                  <li><a class="firasize ui-btn-active ui-btn-icon-top ui-content ui-alt-icon ui-icon-camera" href="#fragmentBing1"></a></li>
-                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-l" href="#fragmentBing2"></a></li>
-                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-r" href="#fragmentBing3"></a></li>
-                </ul>
-              </div>
-              <br>
-              <div id="fragmentBing1">
-                <br>
-                <div class="copy" id="Copyright"></div>
-                <br>
-                <div data-role="footer" class="rekt" id="share-image">
-                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
-                </div>
-              </div>
-              <div id="fragmentBing2">
-                <br>
-                <div class="copy" id="Copyright2"></div>
-                <br>
-                <div data-role="footer" class="rekt" id="share-image1">
-                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
-                </div>
-              </div>
-              <div id="fragmentBing3">
-                <br>
-                <div class="copy" id="Copyright3"></div>
-                <br>
-                <div data-role="footer" class="rekt" id="share-image2">
-                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
-                </div>
-              </div>
-
-
+            <div class="galleria" id="galleria_1">
             </div>
-          </div>
+        </div>
           <div id="fragmentNasa">
-            <div data-role="tabs">
-              <div data-role="navbar">
-                <ul>
-                  <li><a class="firasize ui-btn-active ui-btn-icon-top ui-content ui-alt-icon ui-icon-camera" href="#fragmentNasa1"></a></li>
-                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-l" href="#fragmentNasa2"></a></li>
-                  <li><a class="firasize ui-btn-icon-top ui-content ui-alt-icon ui-icon-carat-r" href="#fragmentNasa3"></a></li>
-                </ul>
-              </div>
-              <br>
-              <div id="fragmentNasa1">
-                <br>
-                <div class="copy" id="NASACopyright1"></div>
-                <br>
-                <div data-role="footer" class="rekt" id="share-Nasa1">
-                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
-                </div>
-              </div>
-              <div id="fragmentNasa2">
-                <br>
-                <div class="copy" id="NASACopyright2"></div>
-                <br>
-                <div data-role="footer" class="rekt" id="share-Nasa2">
-                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
-                </div>
-              </div>
-              <div id="fragmentNasa3">
-                <br>
-                <div class="copy" id="NASACopyright3"></div>
-                <br>
-                <div data-role="footer" class="rekt" id="share-Nasa3">
-                  <p align="left" class="firasize ui-btn-b ui-btn-icon-left ui-alt-icon ui-icon-action">Set as Wallpaper</p>
-                </div>
-              </div>
-              <br>
+            <div class="galleria" id="galleria_2">
             </div>
+
           </div>
         </div>
       </div>
@@ -130,8 +65,8 @@
           <a href="#page1" data-transition="slide" class="ui-btn ui-btn-right ui-alt-icon ui-btn-icon-right ui-corner-all ui-icon-carat-r">Back</a>
         </div>
         <div data-role="main" class="ui-content">
-        <p class="firasize"><h6>Coming Soon!</h6></p>
-      </div>
+          <p class="firasize"><h6>Coming Soon!</h6></p>
+        </div>
       </div>
     </body>
   </HTML>
