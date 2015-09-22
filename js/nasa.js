@@ -5,7 +5,7 @@ var NasaImageResized = [];
 var Npar = [];
 var Npre = [];
 var NCopy = [];
-
+var Nima = 1;
 $(document).on('click', '#swip', function() {
 
   if(inth!=1){
@@ -29,27 +29,11 @@ $(document).on('click', '#swip', function() {
           loop = loop + 1;
         }
 
-        Galleria.get(0).load([
+        Galleria.get(1).load([
           {image: NasaImageResized[0],
             description: NCopy[0]},
           {image: NasaImageResized[1],
             description: NCopy[1]},
-          {image: NasaImageResized[2],
-          description: NCopy[2]},
-          {image: NasaImageResized[3],
-          description: NCopy[3]},
-          {image: NasaImageResized[4],
-          description: NCopy[4]},
-          {image: NasaImageResized[5],
-          description: NCopy[5]},
-          {image: NasaImageResized[6],
-          description: NCopy[6]},
-          {image: NasaImageResized[7],
-          description: NCopy[7]},
-          {image: NasaImageResized[8],
-          description: NCopy[8]},
-          {image: NasaImageResized[9],
-          description: NCopy[9]},
             ]);
         Galleria.toggleFullscreen();
 
@@ -59,4 +43,16 @@ $(document).on('click', '#swip', function() {
   }
 
 
+});
+
+$(document).on('click', '#galleria_2', function() {
+   Nima++;
+   if(Nima<=9){
+   Galleria.get(1).push([
+            {image: NasaImageResized[Nima],
+              description: NCopy[Nima]}
+              ]);
+              
+   }
+   
 });
