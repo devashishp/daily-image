@@ -35,7 +35,6 @@ $(document).on('click', '#swip', function() {
           {image: NasaImageResized[1],
             description: NCopy[1]},
             ]);
-        Galleria.toggleFullscreen();
 
 
       }
@@ -45,7 +44,7 @@ $(document).on('click', '#swip', function() {
 
 });
 
-$(document).on('click', '#galleria_2', function() {
+$(document).on('mousedown', '#galleria_2', function() {
    Nima++;
    if(Nima<=9){
    Galleria.get(1).push([

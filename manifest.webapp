@@ -1,6 +1,6 @@
 {
   "name": "Daily Image",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "See the NASA and Bing image of the day, set it as your wallpaer!",
   "launch_path": "/index.html",
 
@@ -18,10 +18,7 @@
   "permissions": {
     "systemXHR": {
         "description": "To fetch the image from the web"
-    },
-    "network-http": {},
-    "network-tcp": {}
-
+    }
   },
   "type": "privileged",
   "messages": [
