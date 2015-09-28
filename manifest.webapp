@@ -1,6 +1,6 @@
 {
   "name": "Daily Image",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "See the NASA and Bing image of the day, set it as your wallpaer!",
   "launch_path": "/index.html",
 

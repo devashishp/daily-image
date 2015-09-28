@@ -122,7 +122,7 @@ function Nasa() {
         while (loop <= 9) {
           NasaImage[loop] = msg['value']['items'][loop]['enclosure']['url'];
           NCopy[loop] = msg['value']['items'][loop]['description'];
-          NasaImageResized[loop] = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=" + NasaImage[loop] + "&container=focus&resize_w=1366&resize_h=768&refresh=2592000";
+          NasaImageResized[loop] = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=" + NasaImage[loop] + "&container=focus&resize_h=768&refresh=2592000";
           loop = loop + 1;
         }
         
